@@ -7,8 +7,7 @@ function loadHome () {
     const infoOne = document.createElement("p");
     const infoTwo = document.createElement("p");
 
-    const imageContainer = document.createElement("div");
-    const img = newImage();
+    const img = new Image();
     img.src = chef;
 
 
@@ -17,7 +16,10 @@ function loadHome () {
 
     append(homeContainer,infoOne);
     append(homeContainer,infoTwo);
-    append(homeContainer,img)
+    append(homeContainer,img);
+
+    const contentContainer = document.getElementById("content");
+    contentContainer.appendChild(homeContainer);
 
 
 }

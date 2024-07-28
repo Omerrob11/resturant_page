@@ -3,6 +3,10 @@
 import intitalLoad from './pageload'
 // import './style.css'
 import './styles/style.css'
+
+import loadHome from './pages/home'
+
+
 intitalLoad();
 
 const pageBtns = (function () {
@@ -13,4 +17,7 @@ const pageBtns = (function () {
     return {homeBtn,contactBtn,menuBtn}
 })();
 
-console.log(pageBtns)
+pageBtns.homeBtn.addEventListener("click", (e) => {
+    console.log("haim shli")
+    loadHome();
+})
