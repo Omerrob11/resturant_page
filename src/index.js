@@ -5,6 +5,7 @@ import intitalLoad from './pageload'
 import './styles/style.css'
 
 import loadHome from './pages/home'
+import reset from './functions/reset'
 
 
 intitalLoad();
@@ -18,6 +19,7 @@ const pageBtns = (function () {
 })();
 
 pageBtns.homeBtn.addEventListener("click", (e) => {
-    console.log("haim shli")
+    console.log("haim shli");
+    reset();
     loadHome();
 })
