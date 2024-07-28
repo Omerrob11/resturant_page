@@ -1,11 +1,11 @@
 //entry point for the app
 // takes all the styles from here
 import intitalLoad from './pageload'
-// import './style.css'
 import './styles/style.css'
 
 import loadHome from './pages/home'
 import reset from './functions/reset'
+import loadMenu from './pages/menu'
 
 
 intitalLoad();
@@ -22,4 +22,10 @@ pageBtns.homeBtn.addEventListener("click", (e) => {
     console.log("haim shli");
     reset();
     loadHome();
+})
+
+pageBtns.menuBtn.addEventListener("click", (e) => {
+    console.log("haim shli");
+    reset();
+    loadMenu();
 })
