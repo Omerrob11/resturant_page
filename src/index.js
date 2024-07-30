@@ -36,3 +36,7 @@ pageBtns.contactBtn.addEventListener("click", (e) => {
     reset();
     loadContact();
 })
+
+// tomrrow:
+    // see the design patters of the 2 github guys, try to understand the difference
+    // publish the code to github

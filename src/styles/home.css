@@ -1,0 +1,8 @@
+.info {
+    color: blue;
+}
+
+/* 
+    why use home.css?
+    each module is a page, so why not have a stylesheet file to each page?
+*/

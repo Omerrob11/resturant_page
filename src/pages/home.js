@@ -2,10 +2,16 @@
 // append that function to the dom
 
 import chef from '../assets/chef.jpeg'
+
+import '../styles/home.css'
+
 function loadHome () {
     const homeContainer = document.createElement("div");
     const infoOne = document.createElement("p");
     const infoTwo = document.createElement("p");
+
+    infoOne.classList.add("info");
+    infoTwo.classList.add("info")
 
     const img = new Image();
     img.src = chef;
